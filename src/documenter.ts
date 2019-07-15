@@ -18,6 +18,13 @@ export default class Documenter
     protected targetPosition:Position;
 
     /**
+     * Capture the end position
+     *
+     * @type {Position}
+     */
+    protected targetEndPosition:Position;
+
+    /**
      * We'll need an editor to pass to each editor
      *
      * @type {TextEditor}
@@ -33,6 +40,7 @@ export default class Documenter
     public constructor(range:Range, editor:TextEditor)
     {
         this.targetPosition = range.start;
+        this.targetEndPosition = range.end;
         this.editor = editor;
     }
 

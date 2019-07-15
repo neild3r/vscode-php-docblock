@@ -15,9 +15,16 @@ suite("Command tests", () => {
     });
 
     test("Command: trigger", () => {
-        editor.selection = new Selection(3, 0, 3, 0);
+        editor.selection = new Selection(2, 0, 2, 0);
         assert.doesNotThrow(async () => {
             await commands.executeCommand('php-docblocker.trigger', editor)
+        });
+    });
+
+    test("Command: re-parse", () => {
+        editor.selection = new Selection(7, 0, 7, 0);
+        assert.doesNotThrow(async () => {
+            await commands.executeCommand('php-docblocker.re-parse', editor)
         });
     });
 });
