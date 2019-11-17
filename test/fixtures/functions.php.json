@@ -154,6 +154,23 @@
         }
     },
     {
+        "key": "array-params",
+        "name": "Complex Array params",
+        "result": {
+            "return": "void",
+            "params": [
+                {
+                    "name": "$var",
+                    "type": "array"
+                },
+                {
+                    "name": "$var2",
+                    "type": "array"
+                }
+            ]
+        }
+    },
+    {
         "key": "nullable-return-type",
         "name": "Nullable return type",
         "result": {

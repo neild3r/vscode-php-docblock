@@ -86,6 +86,11 @@ abstract class Test
     ) {
     }
 
+    ////=> array-params
+    public function arrayParams($var = array('a', array()), $var2 = array())
+    {
+    }
+
     ////=> param-namespace
     public function paramNamespaced(\TypeHint $hint, $test)
     {
@@ -166,7 +171,7 @@ abstract class Test
     public function hasValue()
     {
     }
-    
+
     ////=> can
     public function canValue()
     {

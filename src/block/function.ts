@@ -32,7 +32,7 @@ export default class FunctionBlock extends Block
 
 
         if (argString != "") {
-            let args = argString.split(',');
+            let args = this.getSplitWithoutEnclosed(argString);
 
             if (Config.instance.get('qualifyClassNames')) {
                 head = this.getClassHead();
