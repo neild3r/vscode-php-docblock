@@ -248,6 +248,171 @@ export default class Completions implements CompletionItemProvider
         {
             tag: '@version',
             snippet: '@version ${1:1.0.0}'
+        },
+
+        {
+            tag: '@mixin (Laravel)',
+            snippet: '@mixin ${1:MyClass}'
+        },
+        {
+            tag: '@param-out (Psalm)',
+            snippet: '@param-out \$${1:var}'
+        },
+        {
+            tag: '@psalm-var (Psalm)',
+            snippet: '@psalm-var ${1:mixed}'
+        },
+        {
+            tag: '@psalm-param (Psalm)',
+            snippet: '@psalm-param ${1:mixed} \$${2:name}'
+        },
+        {
+            tag: '@psalm-return (Psalm)',
+            snippet: '@psalm-return ${1:mixed}'
+        },
+        {
+            tag: '@psalm-suppress (Psalm)',
+            snippet: '@psalm-suppress ${1:IssueName}'
+        },
+        {
+            tag: '@psalm-assert (Psalm)',
+            snippet: '@psalm-assert ${1:[assertion]} \$${2:var}'
+        },
+        {
+            tag: '@psalm-assert-if-true (Psalm)',
+            snippet: '@psalm-assert-if-true ${1:[assertion]} \$${2:var}'
+        },
+        {
+            tag: '@psalm-assert-if-false (Psalm)',
+            snippet: '@psalm-assert-if-false ${1:[assertion]} \$${2:var}'
+        },
+        {
+            tag: '@psalm-ignore-nullable-return (Psalm)',
+            snippet: '@psalm-ignore-nullable-return'
+        },
+        {
+            tag: '@psalm-ignore-falsable-return (Psalm)',
+            snippet: '@psalm-ignore-falsable-return'
+        },
+        {
+            tag: '@psalm-seal-properties (Psalm)',
+            snippet: '@psalm-seal-properties'
+        },
+        {
+            tag: '@psalm-internal (Psalm)',
+            snippet: '@psalm-internal ${1:Namespace}'
+        },
+        {
+            tag: '@psalm-readonly (Psalm)',
+            snippet: '@psalm-readonly'
+        },
+        {
+            tag: '@readonly (Psalm)',
+            snippet: '@readonly'
+        },
+        {
+            tag: '@psalm-mutation-free (Psalm)',
+            snippet: '@psalm-mutation-free'
+        },
+        {
+            tag: '@psalm-external-mutation-free (Psalm)',
+            snippet: '@psalm-external-mutation-free'
+        },
+        {
+            tag: '@psalm-immutable (Psalm)',
+            snippet: '@psalm-immutable'
+        },
+        {
+            tag: '@psalm-pure (Psalm)',
+            snippet: '@psalm-pure'
+        },
+        {
+            tag: '@phan-suppress (Phan)',
+            snippet: '@phan-suppress ${1:IssueName}'
+        },
+        {
+            tag: '@suppress (Phan)',
+            snippet: '@suppress ${1:IssueName}'
+        },
+        {
+            tag: '@phan-suppress-current-line (Phan)',
+            snippet: '@phan-suppress-current-line ${1:IssueName, IssueName}'
+        },
+        {
+            tag: '@phan-suppress-next-line (Phan)',
+            snippet: '@phan-suppress-next-line ${1:IssueName, IssueName}'
+        },
+        {
+            tag: '@phan-file-suppress (Phan)',
+            snippet: '@phan-file-suppress ${1:IssueName}'
+        },
+        {
+            tag: '@override (Phan)',
+            snippet: '@override'
+        },
+        {
+            tag: '@inherits (Phan)',
+            snippet: '@inherits'
+        },
+        {
+            tag: '@phan-assert (Phan)',
+            snippet: '@phan-assert ${1:[assertion]} \$${2:var}'
+        },
+        {
+            tag: '@phan-assert-true-condition (Phan)',
+            snippet: '@phan-assert-true-condition ${1:[assertion]} \$${2:var}'
+        },
+        {
+            tag: '@phan-assert-false-condition (Phan)',
+            snippet: '@phan-assert-false-condition ${1:[assertion]} \$${2:var}'
+        },
+        {
+            tag: '@phan-closure-scope (Phan)',
+            snippet: '@phan-closure-scope'
+        },
+        {
+            tag: '@phan-read-only (Phan)',
+            snippet: '@phan-read-only'
+        },
+        {
+            tag: '@phan-write-only (Phan)',
+            snippet: '@phan-write-only'
+        },
+        {
+            tag: '@phan-pure (Phan)',
+            snippet: '@phan-pure'
+        },
+        {
+            tag: '@phan-phan-output-reference (Phan)',
+            snippet: '@param ${1:mixed} \$${2:name} @phan-phan-output-reference'
+        },
+        {
+            tag: '@phan-phan-ignore-reference (Phan)',
+            snippet: '@param ${1:mixed} \$${2:name} @phan-phan-ignore-reference'
+        },
+        {
+            tag: '@phan-var (Phan)',
+            snippet: '@phan-var ${1:mixed}'
+        },
+        {
+            tag: '@phan-param (Phan)',
+            snippet: '@phan-param ${1:mixed} \$${2:name}'
+        },
+        {
+            tag: '@phan-return (Phan)',
+            snippet: '@phan-return ${1:mixed}'
+        },
+        {
+            tag: '@phan-return (Phan)',
+            snippet: '@phan-return ${1:mixed}'
+        },
+        {
+            tag: '@phan-method (Phan)',
+            snippet: '@phan-method ${1:mixed} ${2:methodName()}'
+        },
+        {
+            tag: '@template (Phan)',
+            snippet: '@template'
         }
     ];
 
