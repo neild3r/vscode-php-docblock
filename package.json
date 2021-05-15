@@ -71,6 +71,16 @@
           "default": false,
           "description": "Fully qualifies any data types used in param and returns by reading the namespaces."
         },
+        "php-docblocker.alignParams": {
+          "type": "boolean",
+          "default": false,
+          "description": "Vertically aligns param types and names with additional spaces."
+        },
+        "php-docblocker.alignReturn": {
+          "type": "boolean",
+          "default": false,
+          "description": "Vertically aligns return with above param statements."
+        },
         "php-docblocker.functionTemplate": {
           "type": "object",
           "default": null,

@@ -27,7 +27,9 @@ This extension contributes the following settings:
 * `php-docblocker.returnVoid`: set to `false` to turn off the automatic void return type when it can't be determined
 * `php-docblocker.extra`: an array of extra tags to add to each DocBlock (These can include tabstops and snippet variables)
 * `php-docblocker.useShortNames`: Whether we should use short type names. e.g. bool or boolean
-* `php-docblocker.qualifyClassNames`: When adding type hints for class names search namespace use statements and qualify the class 
+* `php-docblocker.qualifyClassNames`: When adding type hints for class names search namespace use statements and qualify the class
+* `php-docblocker.alignParams`: set to `true` to align params vertically and add appropriate spaces after param names
+* `php-docblocker.alignReturn`: set to `true` to align return vertically with above params statements, this setting requires align params to also be active
 * `php-docblocker.author`: An object containing your default author tag settings
 * `php-docblocker.functionTemplate`: See below for how to set up docblock templates
 * `php-docblocker.propertyTemplate`: See below for how to set up docblock templates
@@ -74,7 +76,7 @@ config option per key to add additional control.
 
 #### Configured function template example
 
-In the example below we have added some gap configuration and removed the return tag for our template as well as 
+In the example below we have added some gap configuration and removed the return tag for our template as well as
 changing the default order. This means we'll never have a @return tag and extra comes before the params. It's also
 worth pointing out that the gapAfter in the message is the same as setting the gap config option in the main config
 to true.
@@ -93,8 +95,8 @@ to true.
 
 #### Configured function with extra content and placeholders
 
-The example below won't have a return tag and will add in an author tag with correct placeholders depending on 
-how many options you have. You can put in placeholders by using `###` in place of the tab stop number and it 
+The example below won't have a return tag and will add in an author tag with correct placeholders depending on
+how many options you have. You can put in placeholders by using `###` in place of the tab stop number and it
 will be calculated at generation time.
 
 ```json
