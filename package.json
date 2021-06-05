@@ -93,6 +93,11 @@
             "email": "email@email.com"
           },
           "description": "Default author tag"
+        },
+        "php-docblocker.enableDoctrineCompilation": {
+          "type": "boolean",
+          "default": false,
+          "description": "Whether you want to enable auto compilation for Doctrine ORM Annonations."
         }
       }
     }

@@ -1,6 +1,7 @@
 import {workspace, TextDocument, Position, CancellationToken, ProviderResult, CompletionItem, CompletionItemProvider, Range, SnippetString, CompletionItemKind, window} from "vscode";
 import Documenter from "./documenter";
 import Config from "./util/config";
+import {doctrineTags} from './extra/doctrine'
 
 /**
  * Completions provider that can be registered to the language
@@ -315,6 +316,8 @@ export default class Completions implements CompletionItemProvider
     protected getTags():Array<{tag:string, snippet:string}>
     {
         if (!this.formatted) {
+            this.addDoctrineTags();
+
             this.tags.forEach((tag, index) => {
                 if (tag.tag == '@author') {
                     tag.snippet = tag.snippet.replace("{{name}}", Config.instance.get('author').name);
@@ -327,5 +330,12 @@ export default class Completions implements CompletionItemProvider
         }
 
         return this.tags;
+    }
+
+    protected addDoctrineTags() 
+    {
+        if (Config.instance.get('enableDoctrineCompilation')) {
+            this.tags = this.tags.concat(doctrineTags)
+        }
     }
 }
